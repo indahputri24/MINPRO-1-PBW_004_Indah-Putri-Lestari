@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Indah Putri Lestari</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+<div id="app">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-purple" href="#">Portfolio Indah Putri Lestari</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero d-flex align-items-center text-center">
+    <div class="container">
+        <img src="images/foto_profil.png" class="profile-img mb-4" alt="Foto Profil">
+        <h1 class="fw-bold">{{ name }}</h1>
+        <h4 class="fw-bold">2409116004</h4>
+        <p class="lead">Mahasiswi Sistem Informasi Semester 4 yang aktif belajar dan mengembangkan diri</p>
+        <a href="#about" class="btn btn-purple mt-3">Explore More</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5 about-section">
+    <div class="container">
+        <div class="about-container">
+            <h2 class="fw-bold section-title mb-5">About Me</h2>
+
+            <!-- Deskripsi Diri-->
+            <div class="row align-items-start mb-5">
+                <div class="col-md-8">
+                    <p>
+                        Saya seorang mahasiswi <strong>S1 Sistem Informasi</strong> di 
+                        <strong>Universitas Mulawarman</strong> yang saat ini sedang menempuh semester 4. 
+                        Saya memiliki minat di bidang <strong>teknologi dan bisnis</strong> serta senang 
+                        mempelajari hal-hal baru yang dapat memberikan pengalaman dan wawasan yang lebih luas. 
+                        Saya aktif mengikuti pelatihan, seminar, dan study club untuk meningkatkan kemampuan, 
+                        serta mengembangkan pola pikir yang adaptif terhadap perkembangan teknologi.
+                    </p>
+                </div>
+                
+                <!-- Tujuan Karier -->
+                <div class="col-md-4">
+                    <div class="career-box">
+                        <h6 class="dream-title mb-2">Tujuan Karier</h6>
+                        <p class="dream-text">
+                            Berkarier di bidang <strong>teknologi dan bisnis</strong> dengan berkontribusi
+                            pada solusi inovatif yang berdampak <strong>positif bagi organisasi dan masyarakat.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 about-divider">
+                <!-- Pengalaman & Aktivitas -->
+                <div class="col-md-6">
+                    <h5 class="mb-4">Pengalaman & Aktivitas</h5>
+                    <ul class="activity-list">
+                        <li><i class="bi bi-star-fill text-purple me-2"></i>Anggota Organisasi INFORSA</li>
+                        <li><i class="bi bi-star-fill text-purple me-2"></i>Peserta Talkshow INSEVENT 2024</li>
+                        <li><i class="bi bi-star-fill text-purple me-2"></i>Peserta Webinar Public Speaking</li>
+                        <li><i class="bi bi-star-fill text-purple me-2"></i>Anggota Study Club Desain UI/UX</li>
+                        <li><i class="bi bi-star-fill text-purple me-2"></i>Peserta Pelatihan Aplikasi Autopsy</li>
+                    </ul>
+                </div>
+
+                <!-- Pendidikan -->
+                <div class="col-md-6">
+                    <h5 class="mb-4">Pendidikan</h5>
+                    <div class="edu-list">
+                        <div class="edu-item">
+                            <i class="bi bi-mortarboard-fill edu-icon"></i>
+                            <div>
+                                <h6>S1 Sistem Informasi</h6>
+                                <p>Universitas Mulawarman</p>
+                                <span>2024 – Sekarang</span>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <i class="bi bi-book-fill edu-icon"></i>
+                            <div>
+                                <h6>SMA Negeri 5 Samarinda</h6>
+                                <span>2021 – 2024</span>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <i class="bi bi-book-fill edu-icon"></i>
+                            <div>
+                                <h6>SMP Negeri 4 Samarinda</h6>
+                                <span>2018 – 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills (Progress Bar) -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h5 class="mb-4">Skills</h5>
+                    <p>Analisis Sistem</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-purple"
+                            data-width="50%"
+                            style="width: 0%">
+                            50%
+                        </div>
+                    </div>
+                    <p>Problem Solving</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-purple"
+                            data-width="20%"
+                            style="width: 0%">
+                            20%
+                        </div>
+                    </div>
+                    <p>Communication Skills</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-pink"
+                            data-width="30%"
+                            style="width: 0%">
+                            30%
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates" class="py-5 bg-soft">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Certificates</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4" v-for="cert in certificates" :key="cert.title">
+                <div class="card certificate-card">
+                    <img :src="cert.image" class="card-img-top" alt="Certificate">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ cert.title }}</h5>
+                        <p class="card-text">{{ cert.year }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vue App -->
+<script>
+const { createApp } = Vue;
+createApp({
+    data() {
+        return {
+            name: "Indah Putri Lestari",
+            certificates: [
+                { title: "Talkshow INSEVENT 2024", year: "2024", image: "images/sertifikat1.png" },
+                { title: "Webinar Public Speaking", year: "2024", image: "images/sertifikat2.png" },
+                { title: "Seminar Transformers 15", year: "2024", image: "images/sertifikat4.png" },
+                { title: "Peserta Study Club Desain UI/UX", year: "2024", image: "images/sertifikat6.png" },
+                { title: "Peserta Study Club Soft Skill", year: "2024", image: "images/sertifikat8.png" },
+                { title: "Anggota Konsumsi Kegiatan TAROT ", year: "2024", image: "images/sertifikat9.png" },
+                { title: "Anggota Organisasi INFORSA Dept.ADWEL", year: "2025", image: "images/sertifikat.png" },
+                { title: "Peserta Knowledge Center Personal Branding", year: "2025", image: "images/sertifikat5.png" },
+                { title: "Peserta Knowledge Center Pelatihan Aplikasi Autopsy", year: "2025", image: "images/sertifikat7.jpeg" },
+            ]
+        }
+    }
+}).mount('#app');
+</script>
+
+<script>
+window.addEventListener('scroll', () => {
+    document.querySelectorAll('.progress-bar').forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            bar.style.width = bar.getAttribute('data-width');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
