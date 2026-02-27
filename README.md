@@ -20,7 +20,7 @@ Website bersifat statis karena tidak menggunakan database maupun backend.
 
 <img width="399" height="613" alt="image" src="https://github.com/user-attachments/assets/c620a51e-c4b6-44d4-b93e-7f5ecaa9229c" />
 
-# Tampilan Setiap Section / Fitur
+# Tampilan dan Penjelasan Code Setiap Section / Fitur
 
 ## 1. Navbar
 
