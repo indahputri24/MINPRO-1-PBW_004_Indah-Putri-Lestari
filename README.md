@@ -32,7 +32,7 @@ Pada bagian paling atas website terdapat navbar dengan latar belakang putih dan 
   
 **b. Penjelasan Code**
 
-Navbar dibuat menggunakan komponen dari Bootstrap 5 dengan class navbar, navbar-expand-lg, dan fixed-top. Menu navigasi menggunakan anchor link seperti href="#home" yang berfungsi untuk mengarahkan pengguna ke section tertentu dalam satu halaman yang sama. Tampilan warna dan bayangan tambahan diatur menggunakan class Bootstrap dan CSS pada file style.css.
+Navbar dibuat menggunakan komponen dari Bootstrap 5 dengan class `navbar`, `navbar-expand-lg`, dan `fixed-top`. Menu navigasi menggunakan anchor link seperti `href="#home"` yang berfungsi untuk mengarahkan pengguna ke section tertentu dalam satu halaman yang sama. Tampilan warna dan bayangan tambahan diatur menggunakan class Bootstrap dan CSS pada file `style.css`.
 
 ## 2. Home (Hero Section)
 
@@ -44,7 +44,7 @@ Section Home merupakan tampilan pembuka website. Bagian ini menampilkan foto pro
 
 **b. Penjelasan Code**
 
-Section ini dibuat menggunakan elemen (<section id="home">) dan memanfaatkan layout Bootstrap seperti container, d-flex, dan align-items-center untuk mengatur posisi konten. Nama ditampilkan menggunakan Vue JS dengan interpolation {{ name }} yang datanya didefinisikan di dalam data() dan dihubungkan ke elemen menggunakan .mount('#app'). Styling seperti background gradient, bentuk lingkaran pada foto, serta warna tombol diatur dalam file style.css.
+Section ini dibuat menggunakan elemen `<section id="home">` dan memanfaatkan layout Bootstrap seperti `container`, `d-flex`, dan `align-items-center` untuk mengatur posisi konten. Nama ditampilkan menggunakan Vue JS dengan interpolation `{{ name }}` yang datanya didefinisikan di dalam `data()` dan dihubungkan ke elemen menggunakan `.mount('#app')`. Styling seperti background gradient, bentuk lingkaran pada foto, serta warna tombol diatur dalam file `style.css`.
 
 ## 3. About Me
 
@@ -66,15 +66,15 @@ Di bawahnya, konten dibagi menjadi dua kolom. Kolom kiri berisi Pengalaman & Akt
 
 **b. Penjelasan Code**
 
-Section ini dibuat menggunakan elemen <section id="about"> dan memanfaatkan sistem grid dari Bootstrap seperti container, row, dan col-md-6 untuk membagi konten menjadi beberapa bagian. Layout dua kolom memungkinkan informasi tersusun lebih terstruktur dan responsif ketika diakses melalui perangkat berbeda.
+Section ini dibuat menggunakan elemen `<section id="about">` dan memanfaatkan sistem grid dari Bootstrap seperti `container`, `row`, dan `col-md-6` untuk membagi konten menjadi beberapa bagian. Layout dua kolom memungkinkan informasi tersusun lebih terstruktur dan responsif ketika diakses melalui perangkat berbeda.
 
-Bagian deskripsi dan tujuan karier dibuat dalam satu baris dengan dua kolom berbeda. Elemen “Tujuan Karier” diberi styling khusus pada file style.css, seperti border kiri berwarna ungu dan padding tambahan untuk memberikan penekanan visual.
+Bagian deskripsi dan tujuan karier dibuat dalam satu baris dengan dua kolom berbeda. Elemen “Tujuan Karier” diberi styling khusus pada file `style.css`, seperti border kiri berwarna ungu dan padding tambahan untuk memberikan penekanan visual.
 
-Daftar Pengalaman & Aktivitas dibuat menggunakan elemen <ul> dengan ikon dari Bootstrap Icons untuk memperjelas tampilan setiap poin. Sementara itu, bagian Pendidikan menggunakan struktur flexbox agar ikon dan teks dapat sejajar secara horizontal.
+Daftar Pengalaman & Aktivitas dibuat menggunakan elemen `<ul>` dengan ikon dari Bootstrap Icons untuk memperjelas tampilan setiap poin. Sementara itu, bagian Pendidikan menggunakan struktur flexbox agar ikon dan teks dapat sejajar secara horizontal.
 
-Pada bagian Skills, progress bar menggunakan komponen Bootstrap dengan class progress dan progress-bar. Lebar setiap bar diatur menggunakan atribut data-width dan dianimasikan melalui JavaScript ketika pengguna melakukan scroll. Hal ini memberikan efek interaktif meskipun website tetap bersifat statis.
+Pada bagian Skills, progress bar menggunakan komponen Bootstrap dengan class `progress` dan `progress-bar`. Lebar setiap bar diatur menggunakan atribut `data-width` dan dianimasikan melalui JavaScript ketika pengguna melakukan scroll. Hal ini memberikan efek interaktif meskipun website tetap bersifat statis.
 
-Seluruh warna, jarak antar elemen, efek bayangan, garis pemisah, serta tampilan responsif diatur dalam file style.css menggunakan variabel warna pada :root, media query, dan properti CSS lainnya.
+Seluruh warna, jarak antar elemen, efek bayangan, garis pemisah, serta tampilan responsif diatur dalam file `style.css` menggunakan variabel warna pada `:root`, media query, dan properti CSS lainnya.
 
 ## 4. Certificates
 
@@ -90,14 +90,13 @@ Setiap sertifikat ditampilkan dalam bentuk card yang berisi gambar sertifikat, j
 
 **b.Penjelasan Code**
 
-Section ini dibuat menggunakan elemen <section id="certificates"> dan memanfaatkan sistem grid Bootstrap seperti container, row, dan col-md-4 untuk mengatur tata letak card dalam bentuk kolom.
+Section ini dibuat menggunakan elemen `<section id="certificates">` dan memanfaatkan sistem grid Bootstrap seperti `container`, `row`, dan `col-md-4` untuk mengatur tata letak card dalam bentuk kolom.
 
-Data sertifikat tidak ditulis langsung satu per satu di dalam HTML, tetapi disimpan dalam array pada bagian data() di Vue JS. Setiap objek dalam array berisi properti title, year, dan image. Data tersebut kemudian ditampilkan menggunakan directive v-for, sehingga setiap item dalam array otomatis dibuat menjadi satu card.
+Data sertifikat tidak ditulis langsung satu per satu di dalam HTML, tetapi disimpan dalam array pada bagian `data()` di Vue JS. Setiap objek dalam array berisi properti `title`, `year`, dan `image`. Data tersebut kemudian ditampilkan menggunakan directive `v-for`, sehingga setiap item dalam array otomatis dibuat menjadi satu card.
 
-Struktur card menggunakan komponen Bootstrap dengan class card dan card-body untuk menjaga konsistensi tampilan. Gambar sertifikat dihubungkan menggunakan binding Vue :src="cert.image" sehingga sumber gambar mengikuti data yang telah didefinisikan.
+Struktur card menggunakan komponen Bootstrap dengan class `card` dan `card-body` untuk menjaga konsistensi tampilan. Gambar sertifikat dihubungkan menggunakan binding Vue `:src="cert.image"` sehingga sumber gambar mengikuti data yang telah didefinisikan.
 
-Efek hover pada card diatur di dalam file style.css menggunakan properti transform: translateY(-8px); dan transition agar pergerakan terlihat halus. Warna background dan bayangan juga diatur dalam CSS untuk menjaga kesesuaian dengan tema utama website.
-
+Efek hover pada card diatur di dalam file `style.css` menggunakan properti `transform: translateY(-8px);` dan `transition` agar pergerakan terlihat halus. Warna background dan bayangan juga diatur dalam CSS untuk menjaga kesesuaian dengan tema utama website.
 
 # Teknologi yang Digunakan
 
