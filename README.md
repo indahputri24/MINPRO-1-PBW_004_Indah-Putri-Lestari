@@ -64,7 +64,7 @@ Bagian deskripsi diri dan tujuan karier ditempatkan dalam satu baris dengan pemb
 
 Daftar Pengalaman & Aktivitas disusun menggunakan elemen `<ul>` yang dipadukan dengan ikon dari Bootstrap Icons sehingga setiap poin memiliki penanda visual yang jelas. Untuk bagian Pendidikan, digunakan pengaturan flexbox agar ikon dan teks dapat tersusun sejajar secara horizontal sehingga tampilan lebih terstruktur.
 
-Pada bagian Skills, digunakan komponen `progress` dan `progress-bar` dari Bootstrap untuk menampilkan tingkat kemampuan dalam bentuk persentase. Nilai lebar setiap bar ditentukan melalui atribut `data-width`, kemudian dijalankan animasinya menggunakan JavaScript saat halaman di-scroll. Pendekatan ini memberikan efek dinamis tanpa mengubah sifat website yang tetap statis.
+Pada bagian Skills, digunakan komponen `progress` dan `progress-bar` dari Bootstrap untuk menampilkan tingkat kemampuan dalam bentuk persentase. Nilai lebar setiap bar ditentukan melalui atribut `data-width`, kemudian dijalankan animasinya menggunakan JavaScript saat halaman di-scroll.
 
 Seluruh pengaturan warna, tipografi, jarak antar elemen, garis pemisah, efek bayangan, serta penyesuaian responsif diatur pada file `style.css` dengan memanfaatkan variabel warna pada `:root`, properti CSS, dan media query.
 
@@ -83,8 +83,6 @@ Data sertifikat tidak dituliskan langsung secara manual di dalam struktur HTML, 
 Struktur card menggunakan komponen Bootstrap dengan class `card` dan `card-body` untuk menjaga konsistensi tampilan. Gambar sertifikat dihubungkan menggunakan binding Vue `:src="cert.image"` sehingga sumber gambar mengikuti data yang telah didefinisikan pada array.
 
 Efek interaktif pada card diatur melalui file `style.css` dengan memanfaatkan properti `transform: translateY(-8px);` serta `transition` agar pergerakan saat hover terlihat halus. Selain itu, pengaturan warna latar, sudut membulat, serta bayangan ditentukan melalui CSS guna mempertahankan keselarasan dengan tema keseluruhan website.
-
-Dengan pendekatan ini, daftar sertifikat dapat ditampilkan secara terstruktur, responsif, serta mudah dikelola tanpa mengubah sifat website yang tetap statis.
 
 # Teknologi yang Digunakan
 
