@@ -58,7 +58,7 @@ Tombol “Explore More” menggunakan class `btn` dari Bootstrap dan dikombinasi
 
 **Penjelasan Code**
 
-Section ini dibangun menggunakan elemen `<section id="about">` sebagai struktur utama untuk menampung seluruh informasi profil. Tata letaknya memanfaatkan sistem Grid Bootstrap melalui penggunaan `container`, `row`, dan `col-md-*` sehingga konten dapat dibagi menjadi beberapa kolom yang seimbang dan tetap menyesuaikan ukuran layar.
+Section ini dibuat menggunakan elemen `<section id="about">` sebagai struktur utama untuk menampung seluruh informasi profil. Tata letaknya memanfaatkan sistem Grid Bootstrap melalui penggunaan `container`, `row`, dan `col-md-*` sehingga konten dapat dibagi menjadi beberapa kolom yang seimbang dan tetap menyesuaikan ukuran layar.
 
 Bagian deskripsi diri dan tujuan karier ditempatkan dalam satu baris dengan pembagian kolom `col-md-8` dan `col-md-4`. Penggunaan breakpoint `md` (≥768px) memungkinkan kedua elemen ditampilkan secara berdampingan pada layar desktop, sedangkan pada perangkat mobile akan otomatis tersusun secara vertikal. Hal ini menunjukkan penerapan responsive design menggunakan breakpoints Bootstrap.
 
