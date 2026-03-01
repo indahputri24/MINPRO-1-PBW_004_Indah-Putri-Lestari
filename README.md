@@ -58,15 +58,21 @@ Tombol “Explore More” menggunakan class `btn` dari Bootstrap dan dikombinasi
 
 **Penjelasan Code**
 
-Section ini dibangun menggunakan elemen `<section id="about">` sebagai struktur utama untuk menampung seluruh informasi profil. Tata letaknya memanfaatkan sistem grid Bootstrap seperti `container`, `row`, dan `col-md-6` sehingga konten dapat dibagi menjadi dua bagian yang seimbang dan tetap menyesuaikan ukuran layar.
+Section ini dibangun menggunakan elemen `<section id="about">` sebagai struktur utama untuk menampung seluruh informasi profil. Tata letaknya memanfaatkan sistem Grid Bootstrap melalui penggunaan `container`, `row`, dan `col-md-*` sehingga konten dapat dibagi menjadi beberapa kolom yang seimbang dan tetap menyesuaikan ukuran layar.
 
-Bagian deskripsi diri dan tujuan karier ditempatkan dalam satu baris dengan pembagian kolom yang berbeda. Penyusunan ini bertujuan agar informasi utama dan visi profesional dapat ditampilkan secara berdampingan tanpa terlihat padat. Elemen “Tujuan Karier” diberikan penegasan visual melalui pengaturan pada file `style.css`, seperti garis vertikal di sisi kiri serta penyesuaian jarak dalam elemen agar tampil lebih menonjol.
+Bagian deskripsi diri dan tujuan karier ditempatkan dalam satu baris dengan pembagian kolom `col-md-8` dan `col-md-4`. Penggunaan breakpoint `md` (≥768px) memungkinkan kedua elemen ditampilkan secara berdampingan pada layar desktop, sedangkan pada perangkat mobile akan otomatis tersusun secara vertikal. Hal ini menunjukkan penerapan responsive design menggunakan breakpoints Bootstrap.
 
-Daftar Pengalaman & Aktivitas disusun menggunakan elemen `<ul>` yang dipadukan dengan ikon dari Bootstrap Icons sehingga setiap poin memiliki penanda visual yang jelas. Untuk bagian Pendidikan, digunakan pengaturan flexbox agar ikon dan teks dapat tersusun sejajar secara horizontal sehingga tampilan lebih terstruktur.
+Pengaturan jarak antar elemen memanfaatkan utilities spacing Bootstrap seperti `py-5`, `mt-5`, dan `mb-4`. Dengan penggunaan class tersebut, tata letak menjadi lebih rapi tanpa perlu menambahkan banyak CSS tambahan.
 
-Pada bagian Skills, digunakan komponen `progress` dan `progress-bar` dari Bootstrap untuk menampilkan tingkat kemampuan dalam bentuk persentase. Nilai lebar setiap bar ditentukan melalui atribut `data-width`, kemudian dijalankan animasinya menggunakan JavaScript saat halaman di-scroll.
+Elemen “Tujuan Karier” diberikan penegasan visual melalui pengaturan pada file `style.css`, seperti penambahan garis vertikal di sisi kiri (`border-left`) serta penyesuaian padding agar tampil lebih menonjol dibandingkan teks deskripsi utama.
 
-Seluruh pengaturan warna, tipografi, jarak antar elemen, garis pemisah, efek bayangan, serta penyesuaian responsif diatur pada file `style.css` dengan memanfaatkan variabel warna pada `:root`, properti CSS, dan media query.
+Daftar Pengalaman & Aktivitas disusun menggunakan elemen `<ul>` yang dipadukan dengan Bootstrap Icons sehingga setiap poin memiliki penanda visual yang jelas. Efek hover ditambahkan melalui CSS untuk memberikan interaksi sederhana pada setiap item.
+
+Untuk bagian Pendidikan, digunakan pengaturan flexbox (`display: flex`) agar ikon dan teks dapat tersusun sejajar secara horizontal sehingga tampilan lebih terstruktur dan mudah dibaca.
+
+Pada bagian Skills, digunakan komponen `progress` dan `progress-bar` dari Bootstrap untuk menampilkan tingkat kemampuan dalam bentuk persentase. Nilai lebar setiap bar ditentukan melalui atribut `data-width`, kemudian dijalankan animasinya menggunakan JavaScript saat halaman di-scroll agar muncul secara bertahap.
+
+Seluruh pengaturan warna, tipografi, jarak antar elemen, garis pemisah, efek bayangan, serta penyesuaian responsif diatur pada file `style.css` dengan memanfaatkan variabel warna pada `:root`, properti CSS, dan media query seperti `@media (max-width: 768px)` untuk memastikan tampilan tetap optimal pada perangkat mobile.
 
 ## 4. Certificates
 
